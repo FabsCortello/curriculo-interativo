@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital@1&family=Ubuntu+Condensed&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-titulo: "Arsenal SC", sans-serif;
+    --fonte-texto: "Ubuntu Condensed", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*height: 100vh;*/ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu__link {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;  
+    text-decoration: none;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.destaque-cor {
+    color: var(--cor-terciaria);
+}
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%; 
+    gap: 82px;
+}
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.25rem;
+    font-family: var(--fonte-texto);
+}
+.certificado {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-texto);
+}
+.apresentacao__links__botoes:hover {
+    background-color: var(--cor-hover);
+}
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 24px;
+    font-family: var(--fonte-titulo);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+.rodape:hover {
+    font-size: larger;
+}
+.img-small {
+    width: 20%;
+    padding: 0% 15% 110% 15%;
+}
+.img-medium {
+    width: 50%;
+    padding: 10% 0% 20% 15%;
+}
+@media(max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        align-content: center;
+    }
+    .apresentacao {
+    flex-direction:column-reverse;
+    padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+ 
+
